@@ -1,1 +1,0 @@
-{"version":3,"file":"Disciplina.d.ts","sourceRoot":"","sources":["../../src/entities/Disciplina.ts"],"names":[],"mappings":"AAAA,qBAAa,UAAU;IAIZ,IAAI,EAAE,MAAM;IACZ,YAAY,EAAE,MAAM;IAJ7B,OAAO,CAAC,SAAS,CAAa;gBAGrB,IAAI,EAAE,MAAM,EACZ,YAAY,EAAE,MAAM;IAGtB,kBAAkB,CAAC,KAAK,EAAE,MAAM,GAAG,IAAI;IAIvC,YAAY,IAAI,MAAM;CAG9B"}

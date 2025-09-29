@@ -1,16 +1,29 @@
-# Projeto Controle de Rotina de Estudos
+# Aplicativo de Controle de Rotina de Estudos
 
-## Descrição
-Aplicativo em TypeScript para gerenciar disciplinas e metas semanais de estudo, permitindo adicionar, concluir e listar metas.
+Este projeto é uma aplicação simples em TypeScript que permite gerenciar disciplinas, metas semanais de estudo e acompanhar o progresso.
 
-## Estrutura
-- `entities/` → Classes Disciplina e Meta
-- `services/` → GerenciadorMetas
-- `index.ts` → Ponto de entrada
+## Funcionalidades
+
+- Cadastrar, listar e excluir disciplinas.
+- Criar metas semanais para cada disciplina.
+- Concluir metas e verificar status.
+- Controle de progresso de estudos por disciplina.
+
+## Tecnologias
+
+- TypeScript
+- Node.js
+- ts-node para execução sem compilação explícita
+
+## Estrutura do Projeto
+
+- `src/entities`: Classes das entidades `Disciplina` e `Meta`.
+- `src/services`: Gerenciadores para disciplinas e metas.
+- `src/index.ts`: Ponto de entrada com exemplo de uso.
 
 ## Como rodar
+
+1. Instale dependências:
+
 ```bash
 npm install
-npm start      # Roda direto com ts-node
-npm run build  # Compila para JS em dist/
-npm run run    # Roda o JS compilado

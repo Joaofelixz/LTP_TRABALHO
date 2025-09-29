@@ -1,7 +1,7 @@
-import { Disciplina } from "./entities/Disciplina.js";
-import { Meta, StatusMeta } from "./entities/Metas.js";
-import { GerenciadorDisciplinas } from "./services/GerenciadorDisciplinas.js";
-import { GerenciadorMetas } from "./services/GerenciadorMetas.js";
+import { Disciplina } from "./entities/Disciplina";
+import { Meta, StatusMeta } from "./entities/Metas";
+import { GerenciadorDisciplinas } from "./services/GerenciadorDisciplinas";
+import { GerenciadorMetas } from "./services/GerenciadorMetas";
 
 const gerenciadorDisciplinas = new GerenciadorDisciplinas();
 const gerenciadorMetas = new GerenciadorMetas();
