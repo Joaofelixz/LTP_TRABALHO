@@ -10,19 +10,24 @@ const gerenciadorMetas = new GerenciadorMetas();
 const matematica = new Disciplina("Matemática", 60);
 const portugues = new Disciplina("Português", 40);
 const historia = new Disciplina("historia", 70);
+const Fisica = new Disciplina("Fisica", 20);
+
 
 gerenciadorDisciplinas.cadastrar(matematica);
 gerenciadorDisciplinas.cadastrar(portugues);
 gerenciadorDisciplinas.cadastrar(historia);
+gerenciadorDisciplinas.cadastrar(Fisica);
 
 
 const meta1 = new Meta(matematica, 5);
 const meta2 = new Meta(portugues, 3);
 const meta3 = new Meta(historia, 8);
+const meta4 = new Meta(Fisica, 20);
 
 gerenciadorMetas.cadastrar(meta1);
 gerenciadorMetas.cadastrar(meta2);
 gerenciadorMetas.cadastrar(meta3);
+gerenciadorMetas.cadastrar(meta4);
 
 
 console.log(" Disciplinas cadastradas:", gerenciadorDisciplinas.listar());
