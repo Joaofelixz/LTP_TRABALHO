@@ -1,4 +1,4 @@
-import { Meta } from "../entities/Metas.js";
+import { Meta } from "../entities/Metas";
 
 export class GerenciadorMetas {
   private metas: Meta[] = [];
@@ -9,11 +9,5 @@ export class GerenciadorMetas {
 
   public listar(): Meta[] {
     return this.metas;
-  }
-
-  public concluirMeta(index: number): void {
-    if (this.metas[index]) {
-      this.metas[index].concluir();
-    }
   }
 }

@@ -1,4 +1,4 @@
-import { Disciplina } from "../entities/Disciplina.js";
+import { Disciplina } from "../entities/Disciplina";
 
 export class GerenciadorDisciplinas {
   private disciplinas: Disciplina[] = [];
@@ -9,9 +9,5 @@ export class GerenciadorDisciplinas {
 
   public listar(): Disciplina[] {
     return this.disciplinas;
-  }
-
-  public excluir(nome: string): void {
-    this.disciplinas = this.disciplinas.filter(d => d.nome !== nome);
   }
 }

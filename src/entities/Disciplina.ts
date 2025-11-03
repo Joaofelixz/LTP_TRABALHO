@@ -1,16 +1,18 @@
-export class Disciplina {
-  private progresso: number = 0;
+import { Atividade } from "../entities/Atividade";
 
-  constructor(
-    public nome: string,
-    public cargaHoraria: number
-  ) {}
+export class Disciplina extends Atividade {
+  private cargaHoraria: number;
 
-  public atualizarProgresso(horas: number): void {
-    this.progresso += horas;
+  constructor(nome: string, cargaHoraria: number) {
+    super(nome); // herdando nome de Atividade
+    this.cargaHoraria = cargaHoraria;
   }
 
-  public getProgresso(): number {
-    return this.progresso;
+  public getCargaHoraria(): number {
+    return this.cargaHoraria;
+  }
+
+  public setCargaHoraria(valor: number): void {
+    this.cargaHoraria = valor;
   }
 }
