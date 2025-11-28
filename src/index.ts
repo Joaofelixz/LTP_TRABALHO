@@ -37,11 +37,17 @@ console.log(gerenciadorMetas.listar());
 try {
 gerenciadorDisciplinas.cadastrar(new Disciplina("Matemática", 60));
 } catch (error: any) {
-console.log("\nErro capturado:", error.message);
+console.log("Erro capturado:", error.message);
 }
 
 try {
 gerenciadorMetas.buscar("Química");
+} catch (error: any) {
+console.log("Erro capturado:", error.message);
+}
+
+try {
+gerenciadorMetas.buscar("História");
 } catch (error: any) {
 console.log("Erro capturado:", error.message);
 }
