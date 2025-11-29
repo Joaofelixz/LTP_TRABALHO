@@ -34,20 +34,14 @@ console.log(gerenciadorDisciplinas.listar());
 console.log("Metas cadastradas:");
 console.log(gerenciadorMetas.listar());
 
-try {
-gerenciadorDisciplinas.cadastrar(new Disciplina("Matemática", 60));
-} catch (error: any) {
-console.log("Erro capturado:", error.message);
+function executar(acao: () => void) {
+  try {
+    acao();
+  } catch (error: any) {
+    console.log("Erro capturado:", error.message);
+  }
 }
 
-try {
-gerenciadorMetas.buscar("Química");
-} catch (error: any) {
-console.log("Erro capturado:", error.message);
-}
-
-try {
-gerenciadorMetas.buscar("História");
-} catch (error: any) {
-console.log("Erro capturado:", error.message);
-}
+executar(() => gerenciadorDisciplinas.cadastrar(new Disciplina("Matemática", 60)));
+executar(() => gerenciadorMetas.buscar("Química"));
+executar(() => gerenciadorMetas.buscar("História"));
