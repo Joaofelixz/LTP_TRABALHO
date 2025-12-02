@@ -4,7 +4,7 @@ export class Disciplina extends Atividade {
   private cargaHoraria: number;
 
   constructor(nome: string, cargaHoraria: number) {
-    super(nome); // herdando nome de Atividade
+    super(nome);
     this.cargaHoraria = cargaHoraria;
   }
 

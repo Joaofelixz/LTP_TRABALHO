@@ -43,5 +43,6 @@ function executar(acao: () => void) {
 }
 
 executar(() => gerenciadorDisciplinas.cadastrar(new Disciplina("Matemática", 60)));
+executar(() => gerenciadorDisciplinas.cadastrar(new Disciplina("Física", 60)));
 executar(() => gerenciadorMetas.buscar("Química"));
-executar(() => gerenciadorMetas.buscar("História"));
+executar(() => gerenciadorMetas.buscar("Educação Física"));

@@ -1,20 +1,29 @@
-export class MetaError extends Error {
-constructor(message: string) {
-super(message);
-this.name = "MetasError";
-}
+export class MetaError {
+  message: string;
+  name: string;
+
+  constructor(message: string) {
+    this.message = message;
+    this.name = "MetaError";
+  }
 }
 
-export class MetaNaoEncontradaError extends MetaError {
-constructor(nomeDisciplina: string) {
-super(`Meta da disciplina "${nomeDisciplina}" não encontrada`);
-this.name = "MetaNaoEncontradaError";
-}
+export class MetaNaoEncontradaError {
+  message: string;
+  name: string;
+
+  constructor(nomeDisciplina: string) {
+    this.message = `Meta da disciplina "${nomeDisciplina}" não encontrada`;
+    this.name = "MetaNaoEncontradaError";
+  }
 }
 
-export class MetaDuplicadaError extends MetaError {
-constructor(nomeDisciplina: string) {
-super(`Já existe uma meta cadastrada para "${nomeDisciplina}"`);
-this.name = "MetaDuplicadaError";
-}
+export class MetaDuplicadaError {
+  message: string;
+  name: string;
+
+  constructor(nomeDisciplina: string) {
+    this.message = `Já existe uma meta cadastrada para "${nomeDisciplina}"`;
+    this.name = "MetaDuplicadaError";
+  }
 }

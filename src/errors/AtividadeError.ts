@@ -1,13 +1,19 @@
-export class AtividadeError extends Error {
-constructor(message: string) {
-super(message);
-this.name = "AtividadeError";
-}
+export class AtividadeError {
+  message: string;
+  name: string;
+
+  constructor(message: string) {
+    this.message = message;
+    this.name = "AtividadeError";
+  }
 }
 
-export class AtividadeNaoEncontradaError extends AtividadeError {
-constructor(nome: string) {
-super(`Atividade "${nome}" não encontrada`);
-this.name = "AtividadeNaoEncontradaError";
-}
+export class AtividadeNaoEncontradaError {
+  message: string;
+  name: string;
+
+  constructor(nome: string) {
+    this.message = `Atividade "${nome}" não encontrada`;
+    this.name = "AtividadeNaoEncontradaError";
+  }
 }
